@@ -33,3 +33,10 @@ Output is
 Output is 
 `Hi there Shubham !`
 
+
+##### Example 3 : Saying PipPip
+###### To say PipPip to a person, all you have to do is call `sayPipPip()` like,
+`earthworm.sayPipPip("Shubham")`
+Output is 
+`PipPip Shubham !`
+

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="earthworm-shubhamt619",
-    version="0.0.3",
+    version="0.0.4",
     author="Shubham Thakur",
     author_email="shubhamt619@gmail.com",
     description="Boilerplate for Publishing Python Packages.",
