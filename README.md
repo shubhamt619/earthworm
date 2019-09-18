@@ -17,8 +17,7 @@ Basically this is like a boilerplate for creating your own python package.
 
 ### Wait, It does Nothing at all ?
 ##### --> It can do a few things allright. See the examples below.
-<br />
-<br />
+
 #### Note : Make sure you Install and Import this package first.
 ##### Install Command - `pip install earthworm-shubhamt619`
 ##### Import like this `import earthworm`
