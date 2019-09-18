@@ -1,4 +1,4 @@
-# <u>e@rthw0rm</u>
+# e@rthw0rm
 ##### A python package by Shubham Thakur
 
 Hello All !
