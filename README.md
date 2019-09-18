@@ -22,10 +22,14 @@ Basically this is like a boilerplate for creating your own python package.
 ##### Install Command - `pip install earthworm-shubhamt619`
 ##### Import like this `import earthworm`
 ##### Example 1 : Saying Hello
-###### To say hello to a person, all you have to do is set the name by using 
-`earthworm.name = 'John Doe'`
-After this, simply use the sayHello() like,
-`earthworm.sayHello()`
+###### To say hello to a person, all you have to do is call `sayHello()` like,
+`earthworm.sayHello("Shubham")`
 Output is 
 `Hello there Shubham !`
+
+##### Example 2 : Saying Hi
+###### To say Hi to a person, all you have to do is call `sayHi()` like,
+`earthworm.sayHi("Shubham")`
+Output is 
+`Hi there Shubham !`
 
