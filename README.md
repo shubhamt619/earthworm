@@ -40,3 +40,51 @@ Output is
 Output is 
 `PipPip Shubham !`
 
+## Upload my package
+#### Okay, I have made changes to this repo, How to upload it to PyPi ?
+-> 1] Make account on [https://test.pypi.org] and [https://pypi.org]
+
+-> 2] Create a file in your $HOME with name `.pypirc` with the following.
+
+>[distutils]
+>    index-servers=
+>        pypi
+>        testpypi
+>
+>    [pypi]
+>    username: <YOUR_USERNAME>
+>    password: <YOUR_PASSWORD>
+>
+>    [testpypi]
+>    repository: https://test.pypi.org/legacy/
+>    username: <YOUR_USERNAME>
+>    password: <YOUR_PASSWORD>
+
+##### 3] Then install required packages - *setuptools* and *wheel* 
+`sudo python3 -m pip install --user --upgrade setuptools wheel`
+#### For Python 2.*
+`sudo python -m pip install --user --upgrade setuptools wheel`
+
+##### 4]  Go to the root directory of your package (Where `setup.py` exists) and run the following command.
+>`sudo python3 setup.py sdist bdist_wheel`
+
+This will generate a `dist/` folder for uploading to `test pypi` or `pypi`.
+
+##### 5]  Install twine
+>`sudo python3 -m pip install --user --upgrade twine`
+
+Twine helps you upload your packages to `test pypi` and `pypi` very easily.
+
+### Final Step
+##### 6]  Upload your package ! ! !
+For `test pypi`
+>`sudo python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+ 
+For PyPi
+> `sudo python3 -m twine upload dist/*` 
+
+##### Hey, How can i update my package ?
+-> The same way you uploaded the package. First Make version change in `setup.py` and increment the version.
+> e.g. 0.0.1 -> 0.0.2
+
+After that, repeat step 4 and 6 to generate `dist/` and reupload newer version of your package.
